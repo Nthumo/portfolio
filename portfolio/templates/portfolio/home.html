@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nthumo Mutinda Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/dist/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dist/anime.css' %}">
+    <style>
+        .group:hover .hover-text-white {
+            color: rgb(0, 0, 0)
+        }
+        .group:hover .hover-text-black {
+            color: #FFFFFF;
+        }
+
+
+    </style>
+</head>
+<body class="bg-zinc-900 h-screen overflow-hidden text-center">
+
+    <!-- main container-->
+    <div class="h-screen flex flex-col p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-full w-full">
+
+                <!-- intro section-->
+                <div class="p-4 sm:p-6 md:p-8 lg:10 xl:12  flex flex-col justify-center items-center min-h-[150px] md:min-h-[200px] gap-4">
+                    <p class="block text-gray-300 text-2xl md:text-2xl">HI THERE! I'M</p>
+                    <h1 class="block text-4xl md:text-4xl font-serif font-extrabold text-white text-center">NTHUMO MUTINDA</h1>
+
+        <div class="wrapper">
+            <h1 class="overflow-hidden text-wrap block font-mono font-extrabold text-2xl md:text-2xl text-center pt-2">
+                    <span class="word block text-white">GRAPHIC DESIGNER</span>
+                    <span class="word block text-white opacity-25 line-through decoration-red-600">ANIMATOR</span>
+                    <span class="word block text-white">SOFTWARE DEVELOPER</span>
+                    <span class="word block text-white opacity-25 line-through decoration-red-600">VIDEO EDITOR</span>
+                    <span class="word block text-white">GRAPHIC DESIGNER</span>
+            </h1>
+        </div>
+
+                </div>
+
+                <!--about section-->
+                <div class="rounded bg-zinc-800 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex items-center justify-center min-h-[150px] md:min-h-[200px] group transform transition-all cursor-pointer hover:scale-95">
+                    <h2 class="text-4xl md:text-4xl font-extrabold text-center text-white">
+                        <span class="hover-text-white">ABOUT</span>
+                        <span class="hover-text-black text-black">ME</span>
+                    </h2>
+                </div>
+
+                <!-- my skills section-->
+                <div class="rounded bg-zinc-800 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex items-center justify-center min-h-[150px] md:min-h-[200px] group transition-all transform cursor-pointer hover:scale-95">
+                    <h2 class="text-4xl md:text-4xl font-extrabold text-center text-white">
+                        <span class="hover-text-white">MY</span>
+                        <span class="text-black hover-text-black">SKILLS</span>
+                    </h2>
+                </div>
+
+                <!-- get in touch section-->
+                <div class="rounded bg-zinc-800 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex items-center justify-center min-h-[150px] md:min-h-[200px] group transition-all cursor-pointer hover:scale-95 transform">
+                    <h2 class="text-4xl md:text-4xl font-extrabold text-center text-white">
+                        <span class="hover-text-white">GET</span>
+                        <span class="text-black hover-text-black">IN TOUCH</span>
+                    </h2>
+                </div>
+
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for additional interactivity can be added here if needed
+    </script>
+</body>
+</html>
