@@ -15,98 +15,90 @@
             }
         </style>
     </head>
-    <body class="bg-zinc-900 p-4">
+    <body class="bg-zinc-900 p-4 overflow-auto">
 
         <!--main container-->
-        <div class="">
-        <!--
-            <div class="text-center">
-                <h1 class="absolute bg-zinc-800 w-64 h-80 text-white right-0 rounded-lg">
-                    <span class="underline-offset-8 decoration-double underline">FRAMEWORKS AND LIBRARIES</span>
-                    <ul class="space-y-4 block pt-8">
-                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">Django</a></li>
-                    </ul>
-                    
-                
-                </h1>
-            </div>    
-        -->
+        <div class="grid md:grid-cols-2 gap-4">
 
             <!--programming languages-->
-
-        
-            <div class="text-center pl-6 h-svh">
-                <h1 class="bg-zinc-800 w-64 text-white right-0 rounded-lg">
-                    <span class=" underline-offset-8 decoration-double underline">PROGRAMMING LANGUAGES</span>
-                    <ul class=" space-y-4 block pt-8 ">
-                        <li><a href="#" class="flex gap-4 items-center block p-2 bg-zinc-900 border hover:bg-black hover:border-zinc-900 rounded-lg">
-                            <img src="{%static 'images/python.png'%}" width="30" height="" alt="python">
-                            Python</a></li>
-                        <li><a href="#" class="flex text-center gap-4 block p-2 hover:bg-black rounded-lg bg-zinc-900 border hover:border-zinc-900">
-                            <img src="{% static 'images/js.png'%}" width="30" alt="JavaScript" class="rounded-lg">
-                            JavaScript</a></li>
-                        <li><a href="#" class="flex items-center gap-4 block p-2 hover:bg-black rounded-lg">
-                            <img src="{% static 'images/c.png'%}" width="30" alt="C">
-                            C++</a></li>
-                        <li><a href="#" class="flex items-center gap-4 block p-2 hover:bg-black rounded-lg">
-                            <img src="{% static 'images/php.png'%}" width="30" alt="PHP">
-                            PHP</a></li>
-
-                        <li><a href="#" class="flex items-center gap-4 block p-2 hover:bg-black rounded-lg">
-                            <img src="{% static 'images/sql.png'%}" width="55" alt="SQL">
-                            SQL</a></li>
-                        
-                        <li><a href="#" class="flex items-center gap-4 block p-2 hover:bg-black rounded-lg">
-                            <img src="{% static 'images/html5.png'%}" width="30" alt="HTML">
-                            HTML</a></li>
-                        <li><a href="#" class="flex items-center gap-4 block hover:bg-black rounded-lg p-2">
-                            <img src="{% static 'images/css3.png' %}" width="30" alt="CSS">
-                            CSS</a>
-                        </li>
-
-                       
+            <div class="bg-zinc-800 min-h-[100px] text-white text-center rounded-lg">
+                <h1>
+                    <span class="underline-offset-8 decoration-double decoration-sky-400 underline text-white"> PROGRAMMING LANGUAGES</span>
+                    <ul class="grid gap-2 pt-4 p-4 ">
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">Python</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">JavaScript</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">C/C++</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">HTML/CSS</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">SQL</li>
                     </ul>
+                    
                 </h1>
-            </div>
-        
 
-            <div class="text-center">
-                <h1 class="bg-zinc-800 absolute w-64 bottom-0 left-0 text-white rounded-lg">
-                    <span class=" underline-offset-8 decoration-double underline">TOOLS AND TECHNOLOGIES</span>
-                    <ul class="space-y-4 block pt-8">
-                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">Git/GitHub</a></li>
-                        <li><a href="#" class="block p-2 hover:bg-black rounder-lg">Docker</a></li>
-                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">CI/CD</a></li>
-                    </ul>
-                </h1>
             </div>
-            <!--
-            <div class="text-center">
-                <h1 class="text-white bg-zinc-800 absolute w-64 h-80 bottom-0 right-0 rounded-lg pt-4">
-                    <span class="underline decoration-double underline-offset-8">DATABASES</span>
-                    <ul class="space-y-4 block pt-8">
-                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">PostreSQL</a></li>
-                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">Redis</a></li>
 
+            <!--frameworks and libraries-->
+            <div class="bg-zinc-800 min-h-[100px] h-40 text-white text-center rounded-lg">
+                <h1>
+                    <span class="underline-offset-8 decoration-double decoration-sky-400 underline text-white">FRAMEWORKS AND LIBRARIES</span>
+                    <ul class="grid gap-2 pt-4 p-4">
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">Django</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">Tailwind CSS</li>
                     </ul>
+                    
                 </h1>
-            </div>
-            -->
-            <!--
-            <div class="text-center flex items-center justify-center">
-                <h1 class="text-white bg-zinc-800 absolute w-64 h-80 bottom-0 left-1/2 rounded-lg pt-4">
-                    <span class="underline decoration-double underline-offset-8">FRONT-END TECHNOLOGIES</span>
-                    <ul class="space-y-4 block pt-8">
-                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">Tailwind CSS</a></li>
-                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">Bootstrap</a></li>
-                    </ul>
+             </div>
 
+            <!--databases-->
+             <div class="bg-zinc-800 min-h-[100px] text-white text-center rounded-lg">
+                <h1>
+                    <span class="text-white underline decoration-double decoration-sky-400 underline-offset-8">DATABASES</span>
+                    <ul class="grid gap-2 pt-4 p-4">
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">PostreSQL</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">SQLite</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">MongoDB</li>
+                    </ul>
+                    
                 </h1>
-            </div>
-            -->
+             </div>
+
+             <!--apis and web services-->
+             <div class="bg-zinc-800 min-h-[100px] text-white text-center rounded-lg">
+                <h1>
+                    <span class="text-white underline underline-offset-8 decoration-double decoration-sky-400">APIs AND WEB SERVICES</span>
+                    <ul class="grid gap-2 pt-4 p-4">
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">RESTful APIs</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">GraphQl</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">API Intergration</li>
+                    </ul>
+                    
+                </h1>
+             </div>
+
+             <!--version control and collaboration-->
+             <div class="bg-zinc-800 min-h-[100px] h-40 text-white text-center rounded-lg">
+                <h1>
+                    <span class="underline underline-offset-8 decoration-double decoration-sky-400">VERSION CONTROL AND COLLABORATION</span>
+                    <ul class="grid gap-2 pt-4 p-4">
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">Git</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">GitHub</li>
+                    </ul>
+                    
+                </h1>
+             </div>
+
+            <!--development tools-->
+             <div class="bg-zinc-800 min-h-[100px] text-white text-center rounded-lg">
+                <h1 class="">
+                    <span class="underline underline-offset-8 decoration-double decoration-sky-400">DEVELOPMENT TOOLS</span>
+                    <ul class="grid gap-2 pt-4 p-4">
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">Docker</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">Kubernetes</li>
+                        <li class="flex gap-4 items-center block p-2 bg-black hover:border rounded-lg">Visual Studio Code</li>
+                    </ul>
+                    
+                </h1>
+             </div>
         </div>
-
-
     </body>
 
 </html>
