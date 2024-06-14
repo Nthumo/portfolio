@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My skills</title>
+        
+        <link rel="stylesheet" href="{% static 'css/dist/styles.css' %}">
+
+        <style>
+            .custom-header {
+                display: inline-block;
+                width: max-content;
+            }
+        </style>
+    </head>
+    <body class="bg-zinc-900 p-4">
+
+        <!--main container-->
+        <div class="">
+        <!--
+            <div class="text-center">
+                <h1 class="absolute bg-zinc-800 w-64 h-80 text-white right-0 rounded-lg">
+                    <span class="underline-offset-8 decoration-double underline">FRAMEWORKS AND LIBRARIES</span>
+                    <ul class="space-y-4 block pt-8">
+                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">Django</a></li>
+                    </ul>
+                    
+                
+                </h1>
+            </div>    
+        -->
+
+            <!--programming languages-->
+
+        
+            <div class="text-center pl-6 h-svh">
+                <h1 class="bg-zinc-800 w-64 text-white right-0 rounded-lg">
+                    <span class=" underline-offset-8 decoration-double underline">PROGRAMMING LANGUAGES</span>
+                    <ul class=" space-y-4 block pt-8 ">
+                        <li><a href="#" class="flex gap-4 items-center block p-2 bg-zinc-900 border hover:bg-black hover:border-zinc-900 rounded-lg">
+                            <img src="{%static 'images/python.png'%}" width="30" height="" alt="python">
+                            Python</a></li>
+                        <li><a href="#" class="flex text-center gap-4 block p-2 hover:bg-black rounded-lg bg-zinc-900 border hover:border-zinc-900">
+                            <img src="{% static 'images/js.png'%}" width="30" alt="JavaScript" class="rounded-lg">
+                            JavaScript</a></li>
+                        <li><a href="#" class="flex items-center gap-4 block p-2 hover:bg-black rounded-lg">
+                            <img src="{% static 'images/c.png'%}" width="30" alt="C">
+                            C++</a></li>
+                        <li><a href="#" class="flex items-center gap-4 block p-2 hover:bg-black rounded-lg">
+                            <img src="{% static 'images/php.png'%}" width="30" alt="PHP">
+                            PHP</a></li>
+
+                        <li><a href="#" class="flex items-center gap-4 block p-2 hover:bg-black rounded-lg">
+                            <img src="{% static 'images/sql.png'%}" width="55" alt="SQL">
+                            SQL</a></li>
+                        
+                        <li><a href="#" class="flex items-center gap-4 block p-2 hover:bg-black rounded-lg">
+                            <img src="{% static 'images/html5.png'%}" width="30" alt="HTML">
+                            HTML</a></li>
+                        <li><a href="#" class="flex items-center gap-4 block hover:bg-black rounded-lg p-2">
+                            <img src="{% static 'images/css3.png' %}" width="30" alt="CSS">
+                            CSS</a>
+                        </li>
+
+                       
+                    </ul>
+                </h1>
+            </div>
+        
+
+            <div class="text-center">
+                <h1 class="bg-zinc-800 absolute w-64 bottom-0 left-0 text-white rounded-lg">
+                    <span class=" underline-offset-8 decoration-double underline">TOOLS AND TECHNOLOGIES</span>
+                    <ul class="space-y-4 block pt-8">
+                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">Git/GitHub</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-black rounder-lg">Docker</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">CI/CD</a></li>
+                    </ul>
+                </h1>
+            </div>
+            <!--
+            <div class="text-center">
+                <h1 class="text-white bg-zinc-800 absolute w-64 h-80 bottom-0 right-0 rounded-lg pt-4">
+                    <span class="underline decoration-double underline-offset-8">DATABASES</span>
+                    <ul class="space-y-4 block pt-8">
+                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">PostreSQL</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">Redis</a></li>
+
+                    </ul>
+                </h1>
+            </div>
+            -->
+            <!--
+            <div class="text-center flex items-center justify-center">
+                <h1 class="text-white bg-zinc-800 absolute w-64 h-80 bottom-0 left-1/2 rounded-lg pt-4">
+                    <span class="underline decoration-double underline-offset-8">FRONT-END TECHNOLOGIES</span>
+                    <ul class="space-y-4 block pt-8">
+                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">Tailwind CSS</a></li>
+                        <li><a href="#" class="block p-2 hover:bg-black rounded-lg">Bootstrap</a></li>
+                    </ul>
+
+                </h1>
+            </div>
+            -->
+        </div>
+
+
+    </body>
+
+</html>
