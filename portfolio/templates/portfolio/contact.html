@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/dist/styles.css' %}">
+    </head>
+
+    <body class="bg-zinc-900 text-white">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 container mx-auto px-4 py-8">
+
+            <div class="max-w-lg mx-auto p-8 rounded-lg bg-zinc-800 items-center">
+                <img src="{%static 'images/lapi'%}" alt="Laptop" class="rounded-lg" style="width: 350px; height: 250px;">
+            </div>
+
+            <div class="max-w-lg mx-auto bg-zinc-800 p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4 text-white underline underline-offset-8 decoration-double decoration-sky-400">FEEL FREE TO DROP ME A LINE</h2>
+                <p class="mb-4">If you have any suggestions, project ideas or even just want to say Hello, fell free to reach out by filling this form:</p>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="mb-4">
+                        <label for="name" class="sr-only"></label>
+                        {{ form.name }}
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="sr-only"></label>
+                        {{ form.email }}
+                    </div>
+                    <div class="mb-4">
+                        <label for="comment" class="sr-only"></label>
+                        {{ form.comment }}
+                    </div>
+                    <button type="submit" class="bg-sky-400 text-white py-2 px-4 rounded-lg hover:bg-sky-600 hover:border">
+                         <span class="text-black font-bold">SEND MESSAGE</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+
+</html>
