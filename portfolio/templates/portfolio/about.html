@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Nthumo</title>
-        {% load static %}
-        <link rel="stylesheet" href="{% static 'css/dist/styles.css' %}">
-    </head>
-
-    <body class="bg-zinc-900 ">
-        <div class="">
-            <div class="rounded-lg text-center text-white text-5xl bg-zinc-900 h-40">
-                <h1 class="underline underline-offset-8 decoration-sky-400 pt-4">
-                    <span>ABOUT</span>
-                    <span class="text-black">ME</span>
-                    
-                </h1>
-               
-            </div>
-
-            <div class="text-white bg-zinc-800 p-4">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Nthumo</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/dist/styles.css' %}">
+</head>
+<body class="bg-zinc-900">
+    <div class="grid container mx-auto gap-4 pt-4">
+        <div class="text-center text-white text-4xl md:text-4xl lg:text-5xl bg-slate-400 h-40 flex items-center justify-center rounded-lg">
+            <h1 class="flex items-center gap-4 underline underline-offset-8 decoration-sky-700 pt-4">
+                <img src="{% static 'images/me' %}" alt="Nthumo" class="border-4 rounded-full border-gray-300 shadow-lg" style="width: 120px; height: 120px;">
+                <span class="text-gray-300">WHO I <span class="text-sky-700">AM?</span> </span>
+                
+            </h1>
+        </div>
+        <div class="flex text-white text-wrap bg-zinc-800 p-4 pb-4 rounded-lg whitespace-normal lg:h-fit">          
+            <div>
                 <p class="mb-4">
                     Hi, I'm Emmanuel Nthumo Mutinda, a passionate full-stack software developer with a strong foundation in Python and other programming languages. Currently, I am pursuing my Bachelor's degree in Computer Science at Murang'a University of Technology.
                 </p>
@@ -41,8 +39,7 @@
                     Thank you for visiting my portfolio. Feel free to explore my projects and get in touch with me if you'd like to discuss potential opportunities or collaborations.
                 </p>
             </div>
-
         </div>
-        
-    </body>
+    </div>
+</body>
 </html>
