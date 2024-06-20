@@ -8,5 +8,5 @@ class ContactForm(forms.Form):
         widget=forms.EmailInput(attrs={'placeholder': 'Your Email', 'class': 'form-input bg-black border border-gray-600 rounded-lg w-full p-2 text-white'})
         )
     comment = forms.CharField(
-        widget=forms.Textarea(attrs={'placeholder': 'Comment', 'class': 'form-textarea bg-black border border-gray-600 rounded-lg w-full p-2 text-white h-20'})
+        widget=forms.Textarea(attrs={'placeholder': 'Message', 'class': 'form-textarea bg-black border border-gray-600 rounded-lg w-full p-2 text-white h-20'})
         )
