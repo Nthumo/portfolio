@@ -136,10 +136,30 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Email configuration
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = 'ab91fa12eb6f7a'
+EMAIL_HOST_PASSWORD = '********f89f'
+EMAIL_PORT = 2525
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'emmanuelmutinda235@gmail.com'
-EMAIL_HOST_PASSWORD = 'Ar500ccc'
-DEFAULT_FROM_EMAIL = 'manuskill20@gmail.com'
+DEFAULT_FROM_EMAIL = 'emmanuelmutinda235@gmail.com'
 
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
