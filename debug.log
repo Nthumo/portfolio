@@ -5788,3 +5788,6 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLR
 Not Found: /favicon.ico
 "GET /favicon.ico HTTP/1.1" 404 3261
 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+File /home/nthumo/Programs/Codes/django_projects/portfolio/portfolionthumo/portfolionthumo/settings.py previous mtime: 1719040589.9378488, current mtime: 1719160297.644403
+/home/nthumo/Programs/Codes/django_projects/portfolio/portfolionthumo/portfolionthumo/settings.py notified as changed. Signal results: [(<function template_changed at 0x7e5374e3da80>, None), (<function translation_file_changed at 0x7e53742e5620>, None), (<function on_file_changed at 0x7e5374343ec0>, None)].
+/home/nthumo/Programs/Codes/django_projects/portfolio/portfolionthumo/portfolionthumo/settings.py changed, reloading.
